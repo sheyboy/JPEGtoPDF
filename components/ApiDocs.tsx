@@ -47,7 +47,10 @@ export const ApiDocs: React.FC = () => {
                 This allows for programmatic conversion without using the web interface.
             </p>
             <p className="mb-6">
-                Note: This application performs all conversions directly in your browser; no files are sent to a server. The following is a specification for a hypothetical backend API. This demonstrates how you could build a similar service using any server-side technology of your choice.
+                This project now includes a lightweight Express server that exposes the same conversion logic through a REST API.
+                Run it with <code className="bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded">npm start</code> and call the
+                <code className="bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded">/api/convert</code> endpoint from your applications
+                or deploy the server on your own infrastructure.
             </p>
             
             <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">API Endpoint</h3>
