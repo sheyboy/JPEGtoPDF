@@ -1,0 +1,5 @@
+{
+  "name": "JPEG to PDF Converter",
+  "description": "A web application that allows users to upload multiple JPEG images and convert them into a single, downloadable PDF document.",
+  "requestFramePermissions": []
+}
