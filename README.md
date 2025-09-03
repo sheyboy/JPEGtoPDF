@@ -2,34 +2,31 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# JPEG to PDF Converter
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1YcmTR1d9Gc2pSGGNdVgpZu1lqxJkEb4I
+A simple web application and REST API for turning JPEG images into a single PDF document.
+Use the browser-based interface to upload or paste images, preview them, and download
+the generated PDF. An Express server is included for server-side conversion.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key.
-3. Start the API server in one terminal:
+2. Start the API server in one terminal:
    `npm start`
-4. In a separate terminal start the development server:
+3. In a separate terminal start the development server:
    `npm run dev`
-5. Open [http://localhost:5173](http://localhost:5173) in your browser to use the app.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser to use the app.
 
 ## API Server
 
-This repository also includes a small Express server that exposes the JPEG-to-PDF conversion as a REST API.
+The Express server exposes JPEG-to-PDF conversion as a REST API.
 
 1. Start the server:
    `npm start`
-2. Send a POST request to `http://localhost:3000/api/convert` with a JSON body containing an array of base64-encoded JPEG data
-   URLs:
+2. Send a POST request to `http://localhost:3000/api/convert` with a JSON body containing an array of base64-encoded JPEG data URLs:
 
 ```json
 {
